@@ -18,11 +18,5 @@ struct ApiResult : Codable {
         case questions = "results"
     }
     
-}
-
-
-extension ApiResult {
-    static func defaultResponse() -> ApiResult {
-        return ApiResult(responseCode: 0, questions: [])
-    }
+    static var defaultResponse = ApiResult(responseCode: 0, questions: [])
 }
