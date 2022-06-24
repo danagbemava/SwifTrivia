@@ -9,5 +9,5 @@ import Foundation
 
 protocol ITriviaRepo {
     
-    func getTriviaQuestions(count: Int, for category: Int) -> ApiResult
+    func getTriviaQuestions(count: Int, for category: Int?) async -> ApiResult
 }
