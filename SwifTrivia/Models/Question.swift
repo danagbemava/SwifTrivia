@@ -20,7 +20,7 @@ import Foundation
 //      ]
 //    }
 
-struct Question : Codable {
+struct Question : Codable, Equatable {
     
     var category: String
     var type: String
@@ -36,9 +36,11 @@ struct Question : Codable {
                 newArray.append($0)
             }
             newArray.append(correctAnswer)
-            newArray.shuffle()
+//            newArray.shuffle()
             return newArray
         }
+        
+        set {}
     }
     
     enum CodingKeys : String, CodingKey {

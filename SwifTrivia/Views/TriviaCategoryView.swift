@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct TriviaCategoryView: View {
+    
+    @EnvironmentObject var observer: TriviaQuestionsObserver
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(triviaCategories) { category in
+            NavigationLink(category.categoryName) {
+                GameView(category: category)
+                    .environmentObject(observer)
+            }
+        }
+        .navigationDestination(for: TriviaCategory.self) { cat in
+            Text(cat.categoryName)
+        }
+        .navigationTitle("Select Category")
     }
 }
 

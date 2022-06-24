@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwifTriviaApp: App {
+    
+    @StateObject var observer = TriviaQuestionsObserver(repo: TriviaRepo())
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(observer)
         }
     }
 }

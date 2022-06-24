@@ -9,7 +9,14 @@ import SwiftUI
 
 struct TriviaHomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: HorizontalAlignment.center, spacing: 20) {
+            Text("Welcome to SwifTrivia")
+            NavigationLink {
+                TriviaCategoryView()
+            } label: {
+                Text("Start Game")
+            }
+        }
     }
 }
 

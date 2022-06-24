@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0E76082864DE87004C4B42 /* TriviaCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E76072864DE87004C4B42 /* TriviaCategoryView.swift */; };
+		FA13A5EC286495C2008E7248 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13A5EB286495C2008E7248 /* Category.swift */; };
+		FA13A5F128649C87008E7248 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13A5F028649C87008E7248 /* SettingsView.swift */; };
+		FA13A5F328649C9C008E7248 /* TriviaHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13A5F228649C9C008E7248 /* TriviaHomeView.swift */; };
 		FA29FBA428623BC30011E7A7 /* SwifTriviaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29FBA328623BC30011E7A7 /* SwifTriviaApp.swift */; };
 		FA29FBA628623BC30011E7A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29FBA528623BC30011E7A7 /* ContentView.swift */; };
 		FA29FBA828623BC40011E7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA29FBA728623BC40011E7A7 /* Assets.xcassets */; };
@@ -23,6 +27,7 @@
 		FA29FBD928624FBE0011E7A7 /* ITriviaRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29FBD828624FBE0011E7A7 /* ITriviaRepo.swift */; };
 		FA29FBDB2862512B0011E7A7 /* TriviaRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29FBDA2862512B0011E7A7 /* TriviaRepo.swift */; };
 		FA29FBDE286259950011E7A7 /* TriviaQuestionsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29FBDD286259950011E7A7 /* TriviaQuestionsObserver.swift */; };
+		FAB092902865D8E7004480DD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0928F2865D8E7004480DD /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA0E76072864DE87004C4B42 /* TriviaCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaCategoryView.swift; sourceTree = "<group>"; };
+		FA13A5EB286495C2008E7248 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FA13A5F028649C87008E7248 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FA13A5F228649C9C008E7248 /* TriviaHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaHomeView.swift; sourceTree = "<group>"; };
 		FA29FBA028623BC30011E7A7 /* SwifTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA29FBA328623BC30011E7A7 /* SwifTriviaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifTriviaApp.swift; sourceTree = "<group>"; };
 		FA29FBA528623BC30011E7A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +68,7 @@
 		FA29FBD828624FBE0011E7A7 /* ITriviaRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITriviaRepo.swift; sourceTree = "<group>"; };
 		FA29FBDA2862512B0011E7A7 /* TriviaRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaRepo.swift; sourceTree = "<group>"; };
 		FA29FBDD286259950011E7A7 /* TriviaQuestionsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestionsObserver.swift; sourceTree = "<group>"; };
+		FAB0928F2865D8E7004480DD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA13A5ED28649C5B008E7248 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA13A5F028649C87008E7248 /* SettingsView.swift */,
+				FA13A5F228649C9C008E7248 /* TriviaHomeView.swift */,
+				FA0E76072864DE87004C4B42 /* TriviaCategoryView.swift */,
+				FAB0928F2865D8E7004480DD /* GameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FA29FB9728623BC20011E7A7 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +130,7 @@
 		FA29FBA228623BC30011E7A7 /* SwifTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				FA13A5ED28649C5B008E7248 /* Views */,
 				FA29FBDC2862597D0011E7A7 /* Observers */,
 				FA29FBD728624F4E0011E7A7 /* Api */,
 				FA29FBCD28623C6E0011E7A7 /* Models */,
@@ -151,6 +173,7 @@
 				FA29FBCE28623D0F0011E7A7 /* Question.swift */,
 				FA29FBD128623DD20011E7A7 /* Difficulty.swift */,
 				FA29FBD4286244510011E7A7 /* ApiResult.swift */,
+				FA13A5EB286495C2008E7248 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,11 +328,16 @@
 				FA29FBCF28623D0F0011E7A7 /* Question.swift in Sources */,
 				FA29FBA628623BC30011E7A7 /* ContentView.swift in Sources */,
 				FA29FBDE286259950011E7A7 /* TriviaQuestionsObserver.swift in Sources */,
+				FA0E76082864DE87004C4B42 /* TriviaCategoryView.swift in Sources */,
+				FA13A5F328649C9C008E7248 /* TriviaHomeView.swift in Sources */,
 				FA29FBD5286244510011E7A7 /* ApiResult.swift in Sources */,
 				FA29FBD228623DD30011E7A7 /* Difficulty.swift in Sources */,
+				FA13A5EC286495C2008E7248 /* Category.swift in Sources */,
 				FA29FBD928624FBE0011E7A7 /* ITriviaRepo.swift in Sources */,
 				FA29FBDB2862512B0011E7A7 /* TriviaRepo.swift in Sources */,
 				FA29FBA428623BC30011E7A7 /* SwifTriviaApp.swift in Sources */,
+				FAB092902865D8E7004480DD /* GameView.swift in Sources */,
+				FA13A5F128649C87008E7248 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
